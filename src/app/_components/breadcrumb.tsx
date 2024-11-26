@@ -1,9 +1,9 @@
 import {
-  Breadcrumb as SBreadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbSeparator,
+  Breadcrumb as SBreadcrumb,
 } from '~/components/ui/breadcrumb'
 
 export function Breadcrumb() {

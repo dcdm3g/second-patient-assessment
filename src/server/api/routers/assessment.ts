@@ -1,6 +1,6 @@
-import { z } from "zod";
+import { z } from 'zod'
 
-import { createTRPCRouter, protectedProcedure } from "~/server/api/trpc";
+import { createTRPCRouter, protectedProcedure } from '~/server/api/trpc'
 
 /**
  * This is the assessment router of your server, which exposes two routes
@@ -34,15 +34,15 @@ export const assessmentRouter = createTRPCRouter({
             date,
             finalScore,
           },
-        });
+        })
       },
     ),
 
   getAll: protectedProcedure.query(async ({ ctx }) => {
     const assessments = await ctx.db.assessment.findMany({
-      orderBy: { createdAt: "desc" },
-    });
+      orderBy: { createdAt: 'desc' },
+    })
 
-    return assessments;
+    return assessments
   }),
-});
+})

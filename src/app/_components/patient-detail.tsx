@@ -1,11 +1,11 @@
+import { CheckCircle2, Clock, MoreVertical, Pencil } from 'lucide-react'
+import Link from 'next/link'
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar'
 import { Badge } from '~/components/ui/badge'
 import { Button } from '~/components/ui/button'
 import { Card, CardContent } from '~/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '~/components/ui/tabs'
 import { ToggleGroup, ToggleGroupItem } from '~/components/ui/toggle-group'
-import { CheckCircle2, Clock, MoreVertical, Pencil } from 'lucide-react'
-import Link from 'next/link'
 
 export function PatientDetail() {
   return (
