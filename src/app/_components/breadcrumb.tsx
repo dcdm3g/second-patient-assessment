@@ -16,7 +16,7 @@ export function Breadcrumb() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="/dashboard">Patient Detail</BreadcrumbLink>
+            <BreadcrumbLink href="/">Patient Detail</BreadcrumbLink>
           </BreadcrumbItem>
         </BreadcrumbList>
       </SBreadcrumb>
