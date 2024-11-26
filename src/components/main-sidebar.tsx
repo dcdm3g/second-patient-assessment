@@ -28,7 +28,11 @@ import {
   SidebarMenuItem,
 } from '~/components/ui/sidebar'
 
-const clinicData = {
+/**
+ * You should fetch this data from your API or another service, I can help you 
+ * with this if you need it.
+ */
+const clinic = {
   name: 'Zendenta',
   location: {
     clinic: 'Avicena Clinic',
@@ -36,7 +40,7 @@ const clinicData = {
   },
 }
 
-export function AppSidebar() {
+export function MainSidebar() {
   return (
     <Sidebar className="border-r">
       <SidebarHeader className="border-b p-4">
@@ -46,7 +50,7 @@ export function AppSidebar() {
               <div className="flex items-center gap-2">
                 <Stethoscope className="h-5 w-5 text-blue-600" />
                 <span className="font-semibold text-blue-600">
-                  {clinicData.name}
+                  {clinic.name}
                 </span>
               </div>
             </SidebarMenuButton>
@@ -54,7 +58,7 @@ export function AppSidebar() {
           <SidebarMenuItem>
             <SidebarMenuButton size="sm" className="text-muted-foreground">
               <Building2 className="h-4 w-4" />
-              <span className="text-sm">{clinicData.location.clinic}</span>
+              <span className="text-sm">{clinic.location.clinic}</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
